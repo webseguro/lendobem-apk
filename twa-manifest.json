@@ -1,0 +1,63 @@
+{
+  "packageId": "br.com.dicasbrasil.api.twa",
+  "host": "api.dicasbrasil.com.br",
+  "name": "Lendo Bem – Aprenda a Ler!",
+  "launcherName": "Lendo Bem",
+  "display": "fullscreen",
+  "themeColor": "#7B5EA7",
+  "themeColorDark": "#000000",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#7B5EA7",
+  "enableNotifications": true,
+  "startUrl": "/lendobem/index.php?app=inicio",
+  "iconUrl": "https://api.dicasbrasil.com.br/lendobem/icons/icon-512.png",
+  "maskableIconUrl": "https://api.dicasbrasil.com.br/lendobem/icons/icon-512-maskable.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "5",
+  "appVersionCode": 5,
+  "shortcuts": [
+    {
+      "name": "Jogos",
+      "shortName": "Jogos",
+      "url": "https://api.dicasbrasil.com.br/lendobem/index.php?app=jogos",
+      "chosenIconUrl": "https://api.dicasbrasil.com.br/lendobem/icons/icon-96.png"
+    },
+    {
+      "name": "Histórias",
+      "shortName": "Histórias",
+      "url": "https://api.dicasbrasil.com.br/lendobem/index.php?app=historias",
+      "chosenIconUrl": "https://api.dicasbrasil.com.br/lendobem/icons/icon-96.png"
+    }
+  ],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://api.dicasbrasil.com.br/lendobem/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://api.dicasbrasil.com.br/lendobem/",
+  "minSdkVersion": 21,
+  "orientation": "portrait-primary",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "protocolHandlers": [],
+  "fileHandlers": [],
+  "launchHandlerClientMode": "",
+  "displayOverride": [
+    "window-controls-overlay",
+    "standalone"
+  ],
+  "appVersion": "5"
+}
