@@ -1,0 +1,27 @@
+name: Build Lendo Bem APK
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Configurar Java 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Instalar Bubblewrap
+        run: npm install -g @bubblewrap/cli
+
+      - name: Gerar APK
+        # Aqui o GitHub usa a RAM dele para compilar
+        run: bubblewrap build --skipSigning
+
+      - name: Salvar APK Pronto
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-release
+          path: ./*.apk
