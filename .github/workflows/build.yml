@@ -1,7 +1,6 @@
 name: Build Lendo Bem APK
 on: [push]
 
-# Adicionamos a variável que o GitHub pediu para o futuro
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -20,8 +19,13 @@ jobs:
       - name: Instalar Bubblewrap
         run: npm install -g @bubblewrap/cli
 
-      - name: Gerar APK (Modo Automático)
-        # O 'yes' responde "sim" para todas as perguntas do Bubblewrap automaticamente
+      - name: Configurar Bubblewrap
+        run: |
+          mkdir -p ~/.bubblewrap
+          yes | bubblewrap doctor
+
+      - name: Gerar APK (Sem Assinatura)
+        # O comando --skipSigning evita que ele peça a senha
         run: yes | bubblewrap build --skipSigning
 
       - name: Salvar APK Pronto
