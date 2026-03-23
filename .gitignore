@@ -1,0 +1,16 @@
+# Nunca commitar o keystore — guarde-o em local seguro
+*.keystore
+*.jks
+*.p12
+
+# Build outputs
+*.apk
+*.aab
+*.aar
+
+# Node
+node_modules/
+
+# Gradle
+.gradle/
+build/
