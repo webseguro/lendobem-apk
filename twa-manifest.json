@@ -17,7 +17,7 @@
   "maskableIconUrl": "https://api.dicasbrasil.com.br/lendobem/icons/icon-512-maskable.png",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
-    "path": "android.keystore",
+    "path": "./android.keystore",
     "alias": "android"
   },
   "appVersionName": "5",
